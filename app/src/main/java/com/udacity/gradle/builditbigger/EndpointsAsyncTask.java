@@ -31,6 +31,9 @@ private Context context;
         public EndpointsAsyncTask() {
         }
 
+        public EndpointsAsyncTask(Context context, Object o) {
+        }
+
         @Override
 protected String doInBackground(Pair<Context, String>... params) {
         if(myApiService == null) {  // Only do this once
