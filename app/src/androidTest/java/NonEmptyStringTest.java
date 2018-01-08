@@ -1,12 +1,10 @@
 import android.test.AndroidTestCase;
 import android.util.Log;
 
-
-
 /**
  * Created by yodgorbekkomilov on 1/8/18.
  */
- 
+
 public class NonEmptyStringTest extends AndroidTestCase {
 
     private static final String LOG_TAG = "NonEmptyStringTest";
