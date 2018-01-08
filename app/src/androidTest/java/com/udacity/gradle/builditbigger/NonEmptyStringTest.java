@@ -9,14 +9,14 @@ import android.util.Log;
 
 public class NonEmptyStringTest extends AndroidTestCase {
 
-    private static final String LOG_TAG = "com.udacity.gradle.builditbigger.NonEmptyStringTest";
+    private static final String LOG_TAG = "NonEmptyStringTest";
 
     @SuppressWarnings("unchecked")
     public void test() {
 
         // Testing that Async task successfully retrieves a non-empty string
         // You can test this from androidTest -> Run 'All Tests'
-        Log.v("com.udacity.gradle.builditbigger.NonEmptyStringTest", "Running com.udacity.gradle.builditbigger.NonEmptyStringTest test");
+        Log.v("NonEmptyStringTest", "Running NonEmptyStringTest test");
         String result = null;
         EndpointsAsyncTask task = new EndpointsAsyncTask(getContext(), null);
         task.execute();
