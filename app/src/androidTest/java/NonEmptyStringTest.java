@@ -1,7 +1,7 @@
-package com.udacity.gradle.builditbigger;
-
 import android.test.AndroidTestCase;
 import android.util.Log;
+
+
 
 /**
  * Created by yodgorbekkomilov on 1/8/18.
