@@ -3,17 +3,21 @@ package com.udacity.gradle.builditbigger;
 import android.test.AndroidTestCase;
 import android.util.Log;
 
+import org.junit.Test;
+
+import static android.support.test.InstrumentationRegistry.getContext;
+import static junit.framework.Assert.assertNotNull;
+
 /**
  * Created by yodgorbekkomilov on 1/8/18.
  */
-
-public class NonEmptyStringTest extends AndroidTestCase {
  
+public class NonEmptyStringTest  {
+
     private static final String LOG_TAG = "NonEmptyStringTest";
 
-    @SuppressWarnings("unchecked")
+    @Test
     public void test() {
-
         // Testing that Async task successfully retrieves a non-empty string
         // You can test this from androidTest -> Run 'All Tests'
         Log.v("NonEmptyStringTest", "Running NonEmptyStringTest test");
