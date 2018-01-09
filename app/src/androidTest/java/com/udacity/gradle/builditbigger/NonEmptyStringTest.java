@@ -18,7 +18,7 @@ import static junit.framework.Assert.assertNotNull;
  * Created by yodgorbekkomilov on 1/8/18.
  */
 
-public class NonEmptyStringTest  {
+public class NonEmptyStringTest {
 
     private static final String LOG_TAG = "NonEmptyStringTest";
 
@@ -38,24 +38,20 @@ public class NonEmptyStringTest  {
         }
         assertNotNull(result);
 
-        @SuppressLint("StaticFieldLeak") EndpointsAsyncTask task = new EndpointsAsyncTask(){
-            protected void onPostExecute( String result, Pair<Context, String> ... params ) {
-                Intent intent = new Intent(getContext(), JokeActivity.class);
-                intent.setAction(Intent.ACTION_SEND);
-                intent.putExtra( MainActivity.JOKE_KEY, myJoker.getJoke());
-
+        @SuppressLint("StaticFieldLeak") EndpointsAsyncTask tasks = new EndpointsAsyncTask() {
+            protected void onPostExecute(String result, Pair<Context, String>... params) {
 
 
             }
 
         };
-        task.execute(new Pair<Context, String>(getContext(), ""));
+        tasks.execute(new Pair<Context, String>(getContext(), ""));
 
         // Use an AsyncTask to request by the backend.
         // When the AsyncTask ends, get the joke received from the AsyncTask and start the Joke activity
     }
-});
+}
 
 
 
-         
+
