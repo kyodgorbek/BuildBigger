@@ -1,9 +1,13 @@
 package com.udacity.gradle.builditbigger;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.test.AndroidTestCase;
 import android.util.Log;
 import android.util.Pair;
+
+import com.example.myapplication.JokeActivity;
 
 import org.junit.Test;
 
@@ -34,17 +38,24 @@ public class NonEmptyStringTest  {
         }
         assertNotNull(result);
 
-        EndpointsAsyncTask task = new EndpointsAsyncTask(){
-            @Override
-            protected void onPostExecute(String result){
+        @SuppressLint("StaticFieldLeak") EndpointsAsyncTask task = new EndpointsAsyncTask(){
+            protected void onPostExecute( String result, Pair<Context, String> ... params ) {
+                Intent intent = new Intent(getContext(), JokeActivity.class);
+                intent.setAction(Intent.ACTION_SEND);
+                intent.putExtra( MainActivity.JOKE_KEY, myJoker.getJoke());
+
 
 
             }
 
         };
-        task.execute(params);
+        task.execute(new Pair<Context, String>(getContext(), ""));
 
-
+        // Use an AsyncTask to request by the backend.
+        // When the AsyncTask ends, get the joke received from the AsyncTask and start the Joke activity
     }
+});
 
-}
+
+
+         
