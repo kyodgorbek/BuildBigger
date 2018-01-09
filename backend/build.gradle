@@ -36,6 +36,7 @@ appengine {
     appcfg {
         oauth2 = true
     }
+    httpPort = 8085 // include this line
     endpoints {
         getClientLibsOnBuild = true
         getDiscoveryDocsOnBuild = true
