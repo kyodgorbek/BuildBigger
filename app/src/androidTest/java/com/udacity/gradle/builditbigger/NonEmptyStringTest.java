@@ -33,6 +33,18 @@ public class NonEmptyStringTest  {
             e.printStackTrace();
         }
         assertNotNull(result);
+
+        MyAsyncTask myAsyncTask = new MyAsynctask(){
+            @Override
+            protected void onPostExecute(String result){
+
+
+            }
+
+        };
+        task.execute(params);
+
+
     }
 
 }
