@@ -34,7 +34,7 @@ public class NonEmptyStringTest  {
         }
         assertNotNull(result);
 
-        MyAsyncTask myAsyncTask = new MyAsynctask(){
+        EndpointsAsyncTask task = new EndpointsAsyncTask(){
             @Override
             protected void onPostExecute(String result){
 
