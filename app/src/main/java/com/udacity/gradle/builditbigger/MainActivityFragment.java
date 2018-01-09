@@ -50,10 +50,11 @@ public class MainActivityFragment extends Fragment {
 
                 //execute the async task
                 @SuppressLint("StaticFieldLeak") EndpointsAsyncTask task = new EndpointsAsyncTask(){
-                    protected void onPostExecute( String result, Pair<Context, String> ... params ) {
+                    protected void onPostExecute( String result) {
                         Intent intent = new Intent(getContext(), JokeActivity.class);
                         intent.setAction(Intent.ACTION_SEND);
                         intent.putExtra( MainActivity.JOKE_KEY, myJoker.getJoke());
+                       startActivity(intent);
 
 
 

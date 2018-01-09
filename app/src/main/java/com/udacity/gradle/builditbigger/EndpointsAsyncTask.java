@@ -70,10 +70,7 @@ public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientReques
 
         @Override
         protected void onPostExecute(String result) {
-                Intent intent = new Intent(getContext(), JokeActivity.class);
-                intent.setAction(Intent.ACTION_SEND);
-                intent.putExtra( MainActivity.JOKE_KEY, myJoker.getJoke());
-        }
-        }
 
+        }
+}
 
