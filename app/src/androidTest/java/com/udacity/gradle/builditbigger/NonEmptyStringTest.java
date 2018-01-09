@@ -28,16 +28,6 @@ public class NonEmptyStringTest {
         // You can test this from androidTest -> Run 'All Tests'
         Log.v("NonEmptyStringTest", "Running NonEmptyStringTest test");
         String result = null;
-        EndpointsAsyncTask task = new EndpointsAsyncTask(getContext(), null);
-        task.execute(new Pair<Context, String>(getContext(), ""));
-        try {
-            result = task.get();
-            Log.d(LOG_TAG, "Retrieved a non-empty string successfully: " + result);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        assertNotNull(result);
-
         @SuppressLint("StaticFieldLeak") EndpointsAsyncTask tasks = new EndpointsAsyncTask() {
             protected void onPostExecute(String result, Pair<Context, String>... params) {
 
@@ -46,6 +36,15 @@ public class NonEmptyStringTest {
 
         };
         tasks.execute(new Pair<Context, String>(getContext(), ""));
+        try {
+            result = tasks.get();
+            Log.d(LOG_TAG, "Retrieved a non-empty string successfully: " + result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        assertNotNull(result);
+
+
 
         // Use an AsyncTask to request by the backend.
         // When the AsyncTask ends, get the joke received from the AsyncTask and start the Joke activity
