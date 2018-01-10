@@ -33,6 +33,14 @@ android {
 
         }
 
+
+    productFlavors{
+        paid{
+            minSdkVersion 21
+        }
+
+    }
+
     }
 
 
