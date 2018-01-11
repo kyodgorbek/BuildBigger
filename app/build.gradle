@@ -45,7 +45,8 @@ android {
     sourceSets {
         free { java.srcDirs = ['src/free/java', 'src/free/java/MainActivity'] }
         paid {
-            java.srcDirs = ['src/paid/java', 'src/paid/java/MainActivity', 'src/paid/java/', 'src/paid/java/java']
+            java.srcDirs = ['src/paid/java', 'src/paid/java/MainActivity', 'src/paid/java/', 'src/paid/java/java', 'src/paid/java/2']
+            resources.srcDirs = ['src/paid/resources', 'src/paid/java']
         }
     }
 }
