@@ -16,8 +16,11 @@ import android.widget.Toast;
 
 import com.example.lib100.*;
 import com.example.myapplication.*;
-import com.google.ads.AdRequest;
+
+
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+
 
 import android.util.Pair;
 
