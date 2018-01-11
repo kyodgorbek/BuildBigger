@@ -35,14 +35,20 @@ android {
 
 
 
-    productFlavors{
-        paid{
+    productFlavors {
+        paid {
             minSdkVersion 21
         }
 
     }
 
+    sourceSets {
+        free { java.srcDirs = ['src/free/java', 'src/free/java/MainActivity'] }
+        paid {
+            java.srcDirs = ['src/paid/java', 'src/paid/java/MainActivity', 'src/paid/java/', 'src/paid/java/java']
+        }
     }
+}
 
 
 
@@ -63,9 +69,6 @@ dependencies {
     compile project(path: ':backend', configuration: 'android-endpoints')
 
     freeCompile 'com.google.android.gms:play-services-ads:11.0.4'
-
-
-
 
 
 }

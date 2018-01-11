@@ -68,6 +68,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/free/assets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/aidl" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/free/java/MainActivity" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/shaders" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestFree/res" type="java-test-resource" />
@@ -190,28 +191,6 @@
     <orderEntry type="library" name="com.google.android.gms:play-services-gass-11.0.4" level="project" />
     <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-core:2.1.3@jar" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-base-11.0.4" level="project" />
-    <orderEntry type="module" module-name="backend" />
-    <orderEntry type="module" module-name="myapplication" />
-    <orderEntry type="module" module-name="javaJokes" />
-    <orderEntry type="module" module-name="backend" />
-    <orderEntry type="module" module-name="myapplication" />
-    <orderEntry type="module" module-name="javaJokes" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-base-9.8.0" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-basement-9.8.0" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-gass-9.8.0" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-tasks-9.8.0" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-ads-9.8.0" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-clearcut-9.8.0" level="project" />
-    <orderEntry type="library" name="com.google.android.gms:play-services-ads-lite-9.8.0" level="project" />
-    <orderEntry type="module" module-name="backend" />
-    <orderEntry type="module" module-name="myapplication" />
-    <orderEntry type="module" module-name="javaJokes" />
-    <orderEntry type="module" module-name="backend" />
-    <orderEntry type="module" module-name="myapplication" />
-    <orderEntry type="module" module-name="javaJokes" />
-    <orderEntry type="module" module-name="backend" />
-    <orderEntry type="module" module-name="myapplication" />
-    <orderEntry type="module" module-name="javaJokes" />
     <orderEntry type="module" module-name="backend" />
     <orderEntry type="module" module-name="myapplication" />
     <orderEntry type="module" module-name="javaJokes" />
