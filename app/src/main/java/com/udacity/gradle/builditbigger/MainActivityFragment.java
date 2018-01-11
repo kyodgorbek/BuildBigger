@@ -16,6 +16,9 @@ import android.widget.Toast;
 
 import com.example.lib100.*;
 import com.example.myapplication.*;
+import com.google.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import android.util.Pair;
 
 
@@ -80,11 +83,11 @@ public class MainActivityFragment extends Fragment {
         // Toast.makeText(this, Joker.class, "Hey I am joker  ", Toast.LENGTH_LONG).show();
 
 
-        // AdView mAdView = (AdView) root.findViewById(R.id.adView);
+        AdView mAdView = (AdView) rootView.findViewById(R.id.adView);
         // Create an ad request. Check logcat output for the hashed device ID to
         // get test ads on a physical device. e.g.
         // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
-        //AdRequest adRequest = new AdRequest.Builder()
+        AdRequest adRequest = new AdRequest.Builder();
         //       .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
         //     .build();
         //mAdView.loadAd(adRequest);
