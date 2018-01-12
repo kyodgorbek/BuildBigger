@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/FinalProject-master.iml" filepath="$PROJECT_DIR$/FinalProject-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.udacity.gradle.buildbigger/com.udacity.gradle.buildbigger.iml" filepath="$PROJECT_DIR$/com.udacity.gradle.buildbigger/com.udacity.gradle.buildbigger.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaJokes/javaJokes.iml" filepath="$PROJECT_DIR$/javaJokes/javaJokes.iml" />
       <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
     </modules>
